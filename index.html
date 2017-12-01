@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TAB选项卡</title>
+    <link rel="stylesheet" href="css/tab.css">
+    <style>
+        .tab-wrapper {
+            float: left;
+            margin-right: 100px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tab-wrapper" config='{
+            "event"    : "mouseover",
+            "effect"   : "fade"
+        }'>
+        <ul class="tab-list">
+            <li class="tab-list-active"><a href="#">美国</a></li>
+            <li><a href="#">万圣节</a></li>
+            <li><a href="#">月球</a></li>
+            <li><a href="#">女神</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-content-item tab-content-active"></div>
+            <div class="tab-content-item"></div>
+            <div class="tab-content-item"></div>
+            <div class="tab-content-item"></div>
+        </div>
+    </div>
+
+
+    <div class="tab-wrapper" config='{
+            "event"    : "click",
+            "effect"   : "fade"
+        }'>
+        <ul class="tab-list">
+            <li class="tab-list-active"><a href="#">美国</a></li>
+            <li><a href="#">万圣节</a></li>
+            <li><a href="#">月球</a></li>
+            <li><a href="#">女神</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-content-item tab-content-active"></div>
+            <div class="tab-content-item"></div>
+            <div class="tab-content-item"></div>
+            <div class="tab-content-item"></div>
+        </div>
+    </div>
+
+
+    <div class="tab-wrapper" config='{
+            "event"    : "mouseover",
+            "effect"   : "default"
+        }'>
+        <ul class="tab-list">
+            <li class="tab-list-active"><a href="#">美国</a></li>
+            <li><a href="#">万圣节</a></li>
+            <li><a href="#">月球</a></li>
+            <li><a href="#">女神</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-content-item tab-content-active"></div>
+            <div class="tab-content-item"></div>
+            <div class="tab-content-item"></div>
+            <div class="tab-content-item"></div>
+        </div>
+    </div>
+
+
+
+    <div class="tab-wrapper" config='{
+            "event"    : "mouseover",
+            "effect"   : "fade",
+            "autoPlay" : 2000
+        }'>
+        <ul class="tab-list">
+            <li class="tab-list-active"><a href="#">美国</a></li>
+            <li><a href="#">万圣节</a></li>
+            <li><a href="#">月球</a></li>
+            <li><a href="#">女神</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-content-item tab-content-active"></div>
+            <div class="tab-content-item"></div>
+            <div class="tab-content-item"></div>
+            <div class="tab-content-item"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-1.11.3-min.js"></script>
+    <script src="js/tab.js"></script>
+    <script>
+        // 启动脚本
+        (function () {
+            // console.log(Tab);
+            // var tab1 = new Tab($('.tab-wrapper').eq(0));
+            Tab.prototype.init($('.tab-wrapper'));
+
+        } ())
+    </script>
+</body>
+</html>
